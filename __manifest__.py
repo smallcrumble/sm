@@ -20,11 +20,12 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','account'],
+    'depends': ['base','account','purchase','stock'],
 
     # always loaded
     'data': [
         'views/purchase_views.xml',
+        'views/stock_move_line_views.xml',
     ],
    
 }
