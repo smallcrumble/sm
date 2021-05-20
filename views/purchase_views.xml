@@ -4,10 +4,10 @@
 	<record id="purchase_order_view_form_inherit_inherit" model="ir.ui.view">
 		<field name="name">purchase.order.form.inherit.inherit</field>
 		<field name="model">purchase.order</field>
-		<field name="inherit_id" ref="purchase_order_view_form_inherit"/>
+		<field name="inherit_id" ref="purchase_stock.purchase_order_view_form_inherit"/>
 		<field name="arch" type="xml">
 			<field name="picking_type_id" position="attributes">
-				<attribute name="attrs">{'invisible':True}</attribute>
+				<attribute name="invisible">1</attribute>
 			</field>
 		</field>
 	</record>
