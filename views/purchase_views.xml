@@ -3,7 +3,7 @@
 
 	<record id="purchase_order_view_form_inherit_inherit" model="ir.ui.view">
 		<field name="name">purchase.order.form.inherit.inherit</field>
-		<field name="model">purchase.order</field>
+		<field name="model">purchase.stock</field>
 		<field name="inherit_id" ref="purchase_stock.purchase_order_view_form_inherit"/>
 		<field name="arch" type="xml">
 			<field name="picking_type_id" position="attributes">
