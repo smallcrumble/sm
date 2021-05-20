@@ -24,7 +24,7 @@
 
     # always loaded
     'data': [
-       
+        'views/purchase_views.xml',
     ],
    
 }
