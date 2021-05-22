@@ -1,6 +1,6 @@
 from odoo import fields, models
 
-class StockMoveLine(models.Model):
-	_inherit = "stock.move.line"
+class StockMove(models.Model):
+	_inherit = "stock.move"
 
 	line_notes = fields.Char(string="Additional Desc")
