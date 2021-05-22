@@ -11,11 +11,11 @@
 		</field>
 	</record>
 	<record id="view_stock_move_operations_inherit" model="ir.ui.view">
-			<field name="name">>stock.move.operations.form.inherit</field>
+			<field name="name">stock.move.operations.form.inherit</field>
 			<field name="model">stock.move</field>
 			<field name="inherit_id" ref="stock.view_stock_move_operations"/>
 			<field name="arch" type="xml">
-				<field name="quantity_done" position="after">
+				<field name="move_line_ids" position="before">
 					<field name="line_notes"/>
 				</field>
 			</field>
