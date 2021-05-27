@@ -26,6 +26,7 @@
     'data': [
         'views/purchase_views.xml',
         'views/stock_move_views.xml',
+        'views/stock_picking_views.xml',
     ],
    
 }
