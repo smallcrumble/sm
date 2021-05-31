@@ -8,4 +8,4 @@ class StockMove(models.Model):
 class StockMoveLine(models.Model):
 	_inherit = "stock.move.line"
 
-	line_notes = fields.Char(related="move_id.line_notes", string="Additional Desc")
+	#line_notes = fields.Char(related="move_id.line_notes", string="Additional Desc")

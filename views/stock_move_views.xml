@@ -21,6 +21,7 @@
 				</field>
 			</field>
 	</record>
+	<!--
 	<record id="view_stock_move_line_detailed_operation_tree_inherit" model="ir.ui.view">
 			<field name="name">stock.move.line.operations.tree.inherit</field>
 			<field name="model">stock.move.line</field>
@@ -31,4 +32,5 @@
 				</field>
 			</field>
 	</record>
+	-->
 </odoo>
