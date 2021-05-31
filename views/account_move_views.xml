@@ -17,6 +17,7 @@
 				</field>-->
 		</field>
 	</record>
+	<!--
 	<record id="view_invoice_asset_category_inherit" model="ir.ui.view">
 		<field name="name">account.invoice.supplier.form.inherit</field>
 		<field name="model">account.move.line</field>
@@ -27,4 +28,5 @@
 			</field>
 		</field>
 	</record>
+	-->
 </odoo>
