@@ -16,6 +16,15 @@
 					<field name="line_notes"/>
 				</field>-->
 		</field>
-
+	</record>
+	<record id="view_invoice_asset_category_inherit" model="ir.ui.view">
+		<field name="name">account.invoice.supplier.form.inherit</field>
+		<field name="model">account.move</field>
+		<field name="inherit_id" ref="base_accounting_kit.view_invoice_asset_category"/>
+		<field name="arch" type="xml">
+			<field name="asset_category_id" position="attributes">
+				<attribute name="invisible">1</attribute>
+			</field>
+		</field>
 	</record>
 </odoo>
