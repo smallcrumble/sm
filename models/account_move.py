@@ -9,4 +9,4 @@ class AccountMove(models.Model):
 class AccountMoveLine(models.Model):
 	_inherit = "account.move.line"
 
-	line_notes = fields.Char(string="Additional Notes")
+	line_notes = fields.Char(string="Detail Notes")

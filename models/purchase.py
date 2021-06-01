@@ -16,7 +16,7 @@ class PurchaseOrder(models.Model):
 class PurchaseOrderLine(models.Model):
 	_inherit = 'purchase.order.line'
 
-	line_notes = fields.Char(string="Additional Notes")
+	line_notes = fields.Char(string="Detail Notes")
 
 	def _prepare_account_move_line(self, move=False):
 		res = super(PurchaseOrderLine, self)._prepare_account_move_line(move)
