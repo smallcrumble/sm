@@ -11,3 +11,14 @@ class PurchaseOrder(models.Model):
 
 	picking_type_id = fields.Many2one('stock.picking.type', 'Deliver To', states=Purchase.READONLY_STATES, required=True, default=_default_picking_type, domain="['|', ('warehouse_id', '=', False), ('warehouse_id.company_id', '=', company_id)]",
 		help="This will determine operation type of incoming shipment")
+
+
+class PurchaseOrderLine(models.Model):
+	_inherit = 'purchase.order.line'
+
+	line_notes = fields.Char(string="Additional Notes")
+
+	def _prepare_account_move_line(self, move=False):
+		res = super(PurchaseOrderLine, self)._prepare_account_move_line(move)
+		res['line_notes']=self.line_notes
+		return res
