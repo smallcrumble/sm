@@ -1,4 +1,7 @@
 from odoo import fields, models
+import logging
+
+_logger = logging.getLogger(__name__)
 
 class StockMove(models.Model):
 	_inherit = "stock.move"
@@ -7,8 +10,9 @@ class StockMove(models.Model):
 
 	def _action_done(self, cancel_backorder=False):
 		res = super(StockMove,self)._action_done(cancel_backorder)
-		print('po line id : '+ str(res['purchase_line_id'].id))
-		print('line notes s.move : '+ str(res['line_notes']))
+		_logger.info('po line id : %s', str(res['purchase_line_id'].id))
+		_logger.info('line notes s.move : %s', str(res['line_notes']))
+		
 		#res['purchase_line_id'].line_notes = res['line_notes']
 		
 		return res
