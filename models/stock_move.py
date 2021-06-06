@@ -13,10 +13,7 @@ class StockMove(models.Model):
 		
 		return res
 
-	def _prepare_account_move_line(self, move=False):
-		res = super(PurchaseOrderLine, self)._prepare_account_move_line(move)
-		res['line_notes']=self.line_notes
-		return res
+	
 
 class StockMoveLine(models.Model):
 	_inherit = "stock.move.line"
