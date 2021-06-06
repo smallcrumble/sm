@@ -13,7 +13,8 @@ class StockMove(models.Model):
 		_logger.info('po line id : %s', str(res['purchase_line_id'].id))
 		_logger.info('line notes s.move : %s', str(res['line_notes']))
 		
-		#res['purchase_line_id'].line_notes = res['line_notes']
+		if res['purchase_line_id']:
+			res['purchase_line_id'].line_notes = res['line_notes']
 		
 		return res
 
