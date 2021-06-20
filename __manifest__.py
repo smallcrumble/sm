@@ -28,6 +28,7 @@
         'views/stock_move_views.xml',
         'views/stock_picking_views.xml',
         'views/account_move_views.xml',
+        'views/product_view.xml'
     ],
    
 }
