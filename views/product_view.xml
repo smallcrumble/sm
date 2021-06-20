@@ -1,7 +1,6 @@
-<!--copy dari cybrosys : sale_purchase_previous_product_cost-->
 <?xml version="1.0"?>
 <odoo>
-
+    <!--copy dari cybrosys : sale_purchase_previous_product_cost-->
     <record id="last_sale_product_prices_view" model="ir.ui.view">
         <field name="name">last.product.prices.view</field>
         <field name="model">sale.order.line</field>
