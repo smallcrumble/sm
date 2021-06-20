@@ -44,7 +44,7 @@ class PurchaseOrderLine(models.Model):
 
 
 class ProductTemplate(models.Model):
-    _inherit = "product.product"
+    _inherit = "product.template"
 
     order_partner_id = fields.Many2one('res.partner', string="Partner")
 
